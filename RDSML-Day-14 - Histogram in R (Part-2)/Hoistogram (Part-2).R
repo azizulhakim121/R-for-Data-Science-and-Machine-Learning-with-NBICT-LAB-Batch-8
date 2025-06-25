@@ -25,7 +25,7 @@ ggplot(dataset, aes(x = weight, fill = sex)) +
 # The plyr package is used to calculate 
 # the mean weight of each group.
 
-# install.packages("plyr")
+#install.packages("plyr")
 library(plyr)
 group_means = ddply(dataset, "sex", summarise, grp.mean = mean(weight))
 group_means
